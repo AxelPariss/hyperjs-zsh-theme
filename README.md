@@ -229,6 +229,32 @@ plugins=(
 )
 ```
 
+Pour la coloration syntaxique : clonez le repository `zsh-syntax-highlighting` :
+```
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+
+Puis modifiez le fichier `~/.zshrc` pour activer le plugin en ajoutant cette ligne dans la liste des plugins :
+```
+plugins=(
+  ...
+  zsh-syntax-highlighting
+)
+```
+
+Pour l'auto-complétion : clonez le repository `zsh-autosuggestions` :
+```
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+Puis modifiez le fichier `~/.zshrc` pour activer le plugin en ajoutant cette ligne dans la liste des plugins :
+```
+plugins=(
+  ...
+  zsh-autosuggestions
+)
+```
+
 ## Étape 7 : Relancer :)
 
 Fermez Hyper et relancez-le !
